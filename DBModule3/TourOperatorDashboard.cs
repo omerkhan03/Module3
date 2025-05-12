@@ -111,12 +111,21 @@ namespace DBModule3
         private void TourOperatorDashboard_Load_1(object sender, EventArgs e)
         {
 
-        }        private void AssignResButton_Click(object sender, EventArgs e)
+        }       
+         private void AssignResButton_Click(object sender, EventArgs e)
         {
             mainpanel.Controls.Clear();
             ServiceProviderAssigner assigner = new ServiceProviderAssigner(userId);
             assigner.Dock = DockStyle.Fill;
             mainpanel.Controls.Add(assigner);
+        }
+
+        private void myreports_Click(object sender, EventArgs e)
+        {
+            mainpanel.Controls.Clear();
+            TourOperatorReport report = new TourOperatorReport(userId);
+            report.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(report);
         }
     }
 }

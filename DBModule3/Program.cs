@@ -16,8 +16,10 @@ namespace DBModule3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Landing());
-            Application.Run(new AdminDashboard());
+            Application.Run(new Landing());
+            Application.Run(new TravelerDashboard());
+
+
         }
     }
 }

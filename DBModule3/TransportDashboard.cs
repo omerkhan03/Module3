@@ -88,14 +88,13 @@ namespace DBModule3
             ServiceProviderReviews reviewsControl = new ServiceProviderReviews(userId);
             reviewsControl.Dock = DockStyle.Fill;
             mainpanel.Controls.Add(reviewsControl);
-        }
-
-        private void myreports_Click(object sender, EventArgs e)
+        }        private void myreports_Click(object sender, EventArgs e)
         {
             mainpanel.Controls.Clear();
             acceptrejectpanel.Controls.Clear();
-
-
+            TransportReport report = new TransportReport(userId);
+            report.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(report);
         }
 
         private void home_Click(object sender, EventArgs e)

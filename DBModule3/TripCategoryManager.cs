@@ -230,5 +230,10 @@ namespace DBModule3
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void TripCategoryManager_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

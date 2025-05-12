@@ -99,12 +99,12 @@ namespace DBModule3
             ServiceProviderReviews reviewsControl = new ServiceProviderReviews(userId);
             reviewsControl.Dock = DockStyle.Fill;
             mainpanel.Controls.Add(reviewsControl);
-        }
-
-        private void myreports_Click(object sender, EventArgs e)
+        }        private void myreports_Click(object sender, EventArgs e)
         {
             mainpanel.Controls.Clear();
-
+            HotelReport report = new HotelReport(userId);
+            report.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(report);
         }
 
         private void acceptrejectpanel_Paint(object sender, PaintEventArgs e)

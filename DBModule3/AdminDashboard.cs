@@ -14,6 +14,7 @@ namespace DBModule3
     public partial class AdminDashboard : Form
     {
         private int userId;
+        private TabControl reportsTabControl;
 
         public AdminDashboard(int userId = 0)
         {
@@ -81,6 +82,10 @@ namespace DBModule3
         private void mngreviews_Click(object sender, EventArgs e)
         {
             mainpanel.Controls.Clear();
+            ReviewManager reviewManager = new ReviewManager();
+            reviewManager.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(reviewManager);
+            
         }
 
         private void mngbookings_Click(object sender, EventArgs e)
@@ -91,16 +96,71 @@ namespace DBModule3
         private void mngusers_Click(object sender, EventArgs e)
         {
             mainpanel.Controls.Clear();
+            UserManager userManager = new UserManager();
+            userManager.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(userManager);
+
         }
 
         private void analytics_Click(object sender, EventArgs e)
         {
             mainpanel.Controls.Clear();
+            
+            if (reportsTabControl == null)
+            {
+                InitializeReportsTabControl();
+            }
+            
+            mainpanel.Controls.Add(reportsTabControl);
         }
 
         private void home_Click(object sender, EventArgs e)
         {
             mainpanel.Controls.Clear();
+        }
+
+        private void mngtrips_Click(object sender, EventArgs e)
+        {
+            mainpanel.Controls.Clear();
+            TripCategoryManager tripCategoryManager = new TripCategoryManager();
+            tripCategoryManager.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(tripCategoryManager);
+        }
+
+        private void InitializeReportsTabControl()
+        {
+            reportsTabControl = new TabControl
+            {
+                Dock = DockStyle.Fill,
+                Font = new Font("Century Gothic", 10)
+            };            // Create tabs for each report type
+            var bookingRevenueTab = new TabPage("Booking & Revenue");
+            bookingRevenueTab.Controls.Add(new BookingRevenueReport { Dock = DockStyle.Fill });
+
+            var travelerDemographicsTab = new TabPage("Traveler Demographics");
+            travelerDemographicsTab.Controls.Add(new TravelerDemographicsReport { Dock = DockStyle.Fill });
+
+            var destinationAnalyticsTab = new TabPage("Destination Analytics");
+            destinationAnalyticsTab.Controls.Add(new DestinationAnalyticsReport { Dock = DockStyle.Fill });
+
+            var bookingAnalysisTab = new TabPage("Abandoned Bookings");
+            bookingAnalysisTab.Controls.Add(new BookingAnalysisReport { Dock = DockStyle.Fill });
+
+            var platformGrowthTab = new TabPage("Platform Growth");
+            platformGrowthTab.Controls.Add(new PlatformGrowthReport { Dock = DockStyle.Fill });
+
+            var paymentAnalyticsTab = new TabPage("Payment Analytics");
+            paymentAnalyticsTab.Controls.Add(new PaymentAnalyticsReport { Dock = DockStyle.Fill });
+
+            // Add tabs to the control
+            reportsTabControl.TabPages.AddRange(new[] {
+                bookingRevenueTab,
+                travelerDemographicsTab,
+                destinationAnalyticsTab,
+                bookingAnalysisTab,
+                platformGrowthTab,
+                paymentAnalyticsTab
+            });
         }
     }
 }

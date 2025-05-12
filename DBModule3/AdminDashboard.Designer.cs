@@ -34,23 +34,23 @@
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.sidepanel = new System.Windows.Forms.Panel();
-            this.logout = new FrameworkTest.SATAButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.home = new FrameworkTest.SATAButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.mainpanel = new System.Windows.Forms.Panel();
             this.analytics = new FrameworkTest.SATAButton();
             this.mngusers = new FrameworkTest.SATAButton();
             this.mngreviews = new FrameworkTest.SATAButton();
             this.mngtrips = new FrameworkTest.SATAButton();
+            this.logout = new FrameworkTest.SATAButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.home = new FrameworkTest.SATAButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sataPictureBox1 = new SATAUiFramework.Controls.SATAPictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.mainpanel = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.sidepanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sataPictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -123,118 +123,6 @@
             this.sidepanel.Name = "sidepanel";
             this.sidepanel.Size = new System.Drawing.Size(186, 692);
             this.sidepanel.TabIndex = 13;
-            // 
-            // logout
-            // 
-            this.logout.BackColor = System.Drawing.Color.DarkGray;
-            this.logout.ButtonText = "LOG OUT";
-            this.logout.CheckedBackground = System.Drawing.Color.DodgerBlue;
-            this.logout.CheckedForeColor = System.Drawing.Color.White;
-            this.logout.CheckedImageTint = System.Drawing.Color.White;
-            this.logout.CheckedOutline = System.Drawing.Color.Transparent;
-            this.logout.CustomDialogResult = System.Windows.Forms.DialogResult.None;
-            this.logout.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.logout.HoverForeColor = System.Drawing.Color.White;
-            this.logout.HoverImage = null;
-            this.logout.HoverImageTint = System.Drawing.Color.White;
-            this.logout.HoverOutline = System.Drawing.Color.Empty;
-            this.logout.Image = null;
-            this.logout.ImageAutoCenter = true;
-            this.logout.ImageExpand = new System.Drawing.Point(0, 0);
-            this.logout.ImageOffset = new System.Drawing.Point(0, 0);
-            this.logout.ImageTint = System.Drawing.Color.White;
-            this.logout.IsToggleButton = false;
-            this.logout.IsToggled = false;
-            this.logout.Location = new System.Drawing.Point(13, 625);
-            this.logout.Margin = new System.Windows.Forms.Padding(4);
-            this.logout.Name = "logout";
-            this.logout.NormalBackground = System.Drawing.Color.Orange;
-            this.logout.NormalForeColor = System.Drawing.Color.White;
-            this.logout.NormalOutline = System.Drawing.Color.Empty;
-            this.logout.OutlineThickness = 2F;
-            this.logout.PressedBackground = System.Drawing.Color.RoyalBlue;
-            this.logout.PressedForeColor = System.Drawing.Color.White;
-            this.logout.PressedImageTint = System.Drawing.Color.White;
-            this.logout.PressedOutline = System.Drawing.Color.Empty;
-            this.logout.Rounding = new System.Windows.Forms.Padding(5);
-            this.logout.Size = new System.Drawing.Size(161, 35);
-            this.logout.TabIndex = 5;
-            this.logout.TextAutoCenter = true;
-            this.logout.TextOffset = new System.Drawing.Point(0, 0);
-            this.logout.Click += new System.EventHandler(this.logout_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel1.Controls.Add(this.home);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.sataPictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1326, 91);
-            this.panel1.TabIndex = 12;
-            // 
-            // home
-            // 
-            this.home.BackColor = System.Drawing.Color.DarkGray;
-            this.home.ButtonText = "HOME";
-            this.home.CheckedBackground = System.Drawing.Color.DodgerBlue;
-            this.home.CheckedForeColor = System.Drawing.Color.White;
-            this.home.CheckedImageTint = System.Drawing.Color.White;
-            this.home.CheckedOutline = System.Drawing.Color.Transparent;
-            this.home.CustomDialogResult = System.Windows.Forms.DialogResult.None;
-            this.home.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.home.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.home.HoverForeColor = System.Drawing.Color.White;
-            this.home.HoverImage = null;
-            this.home.HoverImageTint = System.Drawing.Color.White;
-            this.home.HoverOutline = System.Drawing.Color.Empty;
-            this.home.Image = null;
-            this.home.ImageAutoCenter = true;
-            this.home.ImageExpand = new System.Drawing.Point(0, 0);
-            this.home.ImageOffset = new System.Drawing.Point(0, 0);
-            this.home.ImageTint = System.Drawing.Color.White;
-            this.home.IsToggleButton = false;
-            this.home.IsToggled = false;
-            this.home.Location = new System.Drawing.Point(1079, 23);
-            this.home.Margin = new System.Windows.Forms.Padding(4);
-            this.home.Name = "home";
-            this.home.NormalBackground = System.Drawing.Color.Orange;
-            this.home.NormalForeColor = System.Drawing.Color.White;
-            this.home.NormalOutline = System.Drawing.Color.Empty;
-            this.home.OutlineThickness = 2F;
-            this.home.PressedBackground = System.Drawing.Color.RoyalBlue;
-            this.home.PressedForeColor = System.Drawing.Color.White;
-            this.home.PressedImageTint = System.Drawing.Color.White;
-            this.home.PressedOutline = System.Drawing.Color.Empty;
-            this.home.Rounding = new System.Windows.Forms.Padding(5);
-            this.home.Size = new System.Drawing.Size(125, 47);
-            this.home.TabIndex = 10;
-            this.home.TextAutoCenter = true;
-            this.home.TextOffset = new System.Drawing.Point(0, 0);
-            this.home.Click += new System.EventHandler(this.home_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.mainpanel);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(186, 91);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1140, 660);
-            this.panel4.TabIndex = 16;
-            // 
-            // mainpanel
-            // 
-            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainpanel.Location = new System.Drawing.Point(0, 0);
-            this.mainpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(1140, 660);
-            this.mainpanel.TabIndex = 15;
             // 
             // analytics
             // 
@@ -394,7 +282,100 @@
             this.mngtrips.TabIndex = 6;
             this.mngtrips.TextAutoCenter = true;
             this.mngtrips.TextOffset = new System.Drawing.Point(0, 0);
-            this.mngtrips.Click += new System.EventHandler(this.mngtrips_Click_1);
+            this.mngtrips.Click += new System.EventHandler(this.mngtrips_Click);
+            // 
+            // logout
+            // 
+            this.logout.BackColor = System.Drawing.Color.DarkGray;
+            this.logout.ButtonText = "LOG OUT";
+            this.logout.CheckedBackground = System.Drawing.Color.DodgerBlue;
+            this.logout.CheckedForeColor = System.Drawing.Color.White;
+            this.logout.CheckedImageTint = System.Drawing.Color.White;
+            this.logout.CheckedOutline = System.Drawing.Color.Transparent;
+            this.logout.CustomDialogResult = System.Windows.Forms.DialogResult.None;
+            this.logout.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.logout.HoverForeColor = System.Drawing.Color.White;
+            this.logout.HoverImage = null;
+            this.logout.HoverImageTint = System.Drawing.Color.White;
+            this.logout.HoverOutline = System.Drawing.Color.Empty;
+            this.logout.Image = null;
+            this.logout.ImageAutoCenter = true;
+            this.logout.ImageExpand = new System.Drawing.Point(0, 0);
+            this.logout.ImageOffset = new System.Drawing.Point(0, 0);
+            this.logout.ImageTint = System.Drawing.Color.White;
+            this.logout.IsToggleButton = false;
+            this.logout.IsToggled = false;
+            this.logout.Location = new System.Drawing.Point(13, 625);
+            this.logout.Margin = new System.Windows.Forms.Padding(4);
+            this.logout.Name = "logout";
+            this.logout.NormalBackground = System.Drawing.Color.Orange;
+            this.logout.NormalForeColor = System.Drawing.Color.White;
+            this.logout.NormalOutline = System.Drawing.Color.Empty;
+            this.logout.OutlineThickness = 2F;
+            this.logout.PressedBackground = System.Drawing.Color.RoyalBlue;
+            this.logout.PressedForeColor = System.Drawing.Color.White;
+            this.logout.PressedImageTint = System.Drawing.Color.White;
+            this.logout.PressedOutline = System.Drawing.Color.Empty;
+            this.logout.Rounding = new System.Windows.Forms.Padding(5);
+            this.logout.Size = new System.Drawing.Size(161, 35);
+            this.logout.TabIndex = 5;
+            this.logout.TextAutoCenter = true;
+            this.logout.TextOffset = new System.Drawing.Point(0, 0);
+            this.logout.Click += new System.EventHandler(this.logout_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel1.Controls.Add(this.home);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.sataPictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1326, 91);
+            this.panel1.TabIndex = 12;
+            // 
+            // home
+            // 
+            this.home.BackColor = System.Drawing.Color.DarkGray;
+            this.home.ButtonText = "HOME";
+            this.home.CheckedBackground = System.Drawing.Color.DodgerBlue;
+            this.home.CheckedForeColor = System.Drawing.Color.White;
+            this.home.CheckedImageTint = System.Drawing.Color.White;
+            this.home.CheckedOutline = System.Drawing.Color.Transparent;
+            this.home.CustomDialogResult = System.Windows.Forms.DialogResult.None;
+            this.home.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.home.HoverForeColor = System.Drawing.Color.White;
+            this.home.HoverImage = null;
+            this.home.HoverImageTint = System.Drawing.Color.White;
+            this.home.HoverOutline = System.Drawing.Color.Empty;
+            this.home.Image = null;
+            this.home.ImageAutoCenter = true;
+            this.home.ImageExpand = new System.Drawing.Point(0, 0);
+            this.home.ImageOffset = new System.Drawing.Point(0, 0);
+            this.home.ImageTint = System.Drawing.Color.White;
+            this.home.IsToggleButton = false;
+            this.home.IsToggled = false;
+            this.home.Location = new System.Drawing.Point(1079, 23);
+            this.home.Margin = new System.Windows.Forms.Padding(4);
+            this.home.Name = "home";
+            this.home.NormalBackground = System.Drawing.Color.Orange;
+            this.home.NormalForeColor = System.Drawing.Color.White;
+            this.home.NormalOutline = System.Drawing.Color.Empty;
+            this.home.OutlineThickness = 2F;
+            this.home.PressedBackground = System.Drawing.Color.RoyalBlue;
+            this.home.PressedForeColor = System.Drawing.Color.White;
+            this.home.PressedImageTint = System.Drawing.Color.White;
+            this.home.PressedOutline = System.Drawing.Color.Empty;
+            this.home.Rounding = new System.Windows.Forms.Padding(5);
+            this.home.Size = new System.Drawing.Size(125, 47);
+            this.home.TabIndex = 10;
+            this.home.TextAutoCenter = true;
+            this.home.TextOffset = new System.Drawing.Point(0, 0);
+            this.home.Click += new System.EventHandler(this.home_Click);
             // 
             // pictureBox1
             // 
@@ -426,6 +407,25 @@
             this.sataPictureBox1.TabIndex = 10;
             this.sataPictureBox1.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.mainpanel);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(186, 91);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1140, 660);
+            this.panel4.TabIndex = 16;
+            // 
+            // mainpanel
+            // 
+            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainpanel.Location = new System.Drawing.Point(0, 0);
+            this.mainpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Size = new System.Drawing.Size(1140, 660);
+            this.mainpanel.TabIndex = 15;
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,9 +445,9 @@
             this.panel3.PerformLayout();
             this.sidepanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sataPictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

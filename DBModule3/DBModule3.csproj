@@ -105,6 +105,9 @@
     <Compile Include="GuideRegistration.Designer.cs">
       <DependentUpon>GuideRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuideReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="HotelDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +119,9 @@
     </Compile>
     <Compile Include="HotelRegistration.Designer.cs">
       <DependentUpon>HotelRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelReport.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Landing.cs">
       <SubType>Form</SubType>
@@ -132,9 +138,7 @@
     <Compile Include="PaymentAnalyticsReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PlatformAnalytics.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="PlatformAnalytics.cs" />
     <Compile Include="PlatformGrowthReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -197,6 +201,9 @@
     <Compile Include="TourOperatorDashboard.Designer.cs">
       <DependentUpon>TourOperatorDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="TourOperatorReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="TourOperatorReviews.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -226,6 +233,9 @@
     </Compile>
     <Compile Include="TransportRegistration.Designer.cs">
       <DependentUpon>TransportRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransportReport.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="TravelEaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -359,6 +369,9 @@
     <EmbeddedResource Include="TransportRegistration.resx">
       <DependentUpon>TransportRegistration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TransportReport.resx">
+      <DependentUpon>TransportReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TravelerDashboard.resx">
       <DependentUpon>TravelerDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -382,6 +395,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserBookings.resx">
       <DependentUpon>UserBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManager.resx">
+      <DependentUpon>UserManager.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TourOperatorDashboard));
             this.sidepanel = new System.Windows.Forms.Panel();
+            this.AssignResButton = new FrameworkTest.SATAButton();
             this.myreports = new FrameworkTest.SATAButton();
             this.mytrips = new FrameworkTest.SATAButton();
             this.createtrips = new FrameworkTest.SATAButton();
@@ -46,7 +47,6 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.workpanel = new System.Windows.Forms.Panel();
             this.mainpanel = new System.Windows.Forms.Panel();
-            this.AssignResButton = new FrameworkTest.SATAButton();
             this.sidepanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,6 +70,46 @@
             this.sidepanel.Name = "sidepanel";
             this.sidepanel.Size = new System.Drawing.Size(166, 468);
             this.sidepanel.TabIndex = 11;
+            // 
+            // AssignResButton
+            // 
+            this.AssignResButton.BackColor = System.Drawing.Color.DarkGray;
+            this.AssignResButton.ButtonText = "Assign Resources";
+            this.AssignResButton.CheckedBackground = System.Drawing.Color.DodgerBlue;
+            this.AssignResButton.CheckedForeColor = System.Drawing.Color.White;
+            this.AssignResButton.CheckedImageTint = System.Drawing.Color.White;
+            this.AssignResButton.CheckedOutline = System.Drawing.Color.Transparent;
+            this.AssignResButton.CustomDialogResult = System.Windows.Forms.DialogResult.None;
+            this.AssignResButton.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AssignResButton.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.AssignResButton.HoverForeColor = System.Drawing.Color.White;
+            this.AssignResButton.HoverImage = null;
+            this.AssignResButton.HoverImageTint = System.Drawing.Color.White;
+            this.AssignResButton.HoverOutline = System.Drawing.Color.Empty;
+            this.AssignResButton.Image = global::DBModule3.Properties.Resources.bxs_book_reader;
+            this.AssignResButton.ImageAutoCenter = true;
+            this.AssignResButton.ImageExpand = new System.Drawing.Point(0, 0);
+            this.AssignResButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.AssignResButton.ImageTint = System.Drawing.Color.White;
+            this.AssignResButton.IsToggleButton = false;
+            this.AssignResButton.IsToggled = false;
+            this.AssignResButton.Location = new System.Drawing.Point(11, 346);
+            this.AssignResButton.Margin = new System.Windows.Forms.Padding(4);
+            this.AssignResButton.Name = "AssignResButton";
+            this.AssignResButton.NormalBackground = System.Drawing.Color.Orange;
+            this.AssignResButton.NormalForeColor = System.Drawing.Color.White;
+            this.AssignResButton.NormalOutline = System.Drawing.Color.Empty;
+            this.AssignResButton.OutlineThickness = 2F;
+            this.AssignResButton.PressedBackground = System.Drawing.Color.RoyalBlue;
+            this.AssignResButton.PressedForeColor = System.Drawing.Color.White;
+            this.AssignResButton.PressedImageTint = System.Drawing.Color.White;
+            this.AssignResButton.PressedOutline = System.Drawing.Color.Empty;
+            this.AssignResButton.Rounding = new System.Windows.Forms.Padding(5);
+            this.AssignResButton.Size = new System.Drawing.Size(147, 47);
+            this.AssignResButton.TabIndex = 10;
+            this.AssignResButton.TextAutoCenter = true;
+            this.AssignResButton.TextOffset = new System.Drawing.Point(0, 0);
+            this.AssignResButton.Click += new System.EventHandler(this.AssignResButton_Click);
             // 
             // myreports
             // 
@@ -109,6 +149,7 @@
             this.myreports.TabIndex = 10;
             this.myreports.TextAutoCenter = true;
             this.myreports.TextOffset = new System.Drawing.Point(0, 0);
+            this.myreports.Click += new System.EventHandler(this.myreports_Click);
             // 
             // mytrips
             // 
@@ -467,46 +508,6 @@
             this.mainpanel.Name = "mainpanel";
             this.mainpanel.Size = new System.Drawing.Size(752, 373);
             this.mainpanel.TabIndex = 14;
-            // 
-            // AssignResButton
-            // 
-            this.AssignResButton.BackColor = System.Drawing.Color.DarkGray;
-            this.AssignResButton.ButtonText = "Assign Resources";
-            this.AssignResButton.CheckedBackground = System.Drawing.Color.DodgerBlue;
-            this.AssignResButton.CheckedForeColor = System.Drawing.Color.White;
-            this.AssignResButton.CheckedImageTint = System.Drawing.Color.White;
-            this.AssignResButton.CheckedOutline = System.Drawing.Color.Transparent;
-            this.AssignResButton.CustomDialogResult = System.Windows.Forms.DialogResult.None;
-            this.AssignResButton.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AssignResButton.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.AssignResButton.HoverForeColor = System.Drawing.Color.White;
-            this.AssignResButton.HoverImage = null;
-            this.AssignResButton.HoverImageTint = System.Drawing.Color.White;
-            this.AssignResButton.HoverOutline = System.Drawing.Color.Empty;
-            this.AssignResButton.Image = global::DBModule3.Properties.Resources.bxs_book_reader;
-            this.AssignResButton.ImageAutoCenter = true;
-            this.AssignResButton.ImageExpand = new System.Drawing.Point(0, 0);
-            this.AssignResButton.ImageOffset = new System.Drawing.Point(0, 0);
-            this.AssignResButton.ImageTint = System.Drawing.Color.White;
-            this.AssignResButton.IsToggleButton = false;
-            this.AssignResButton.IsToggled = false;
-            this.AssignResButton.Location = new System.Drawing.Point(11, 346);
-            this.AssignResButton.Margin = new System.Windows.Forms.Padding(4);
-            this.AssignResButton.Name = "AssignResButton";
-            this.AssignResButton.NormalBackground = System.Drawing.Color.Orange;
-            this.AssignResButton.NormalForeColor = System.Drawing.Color.White;
-            this.AssignResButton.NormalOutline = System.Drawing.Color.Empty;
-            this.AssignResButton.OutlineThickness = 2F;
-            this.AssignResButton.PressedBackground = System.Drawing.Color.RoyalBlue;
-            this.AssignResButton.PressedForeColor = System.Drawing.Color.White;
-            this.AssignResButton.PressedImageTint = System.Drawing.Color.White;
-            this.AssignResButton.PressedOutline = System.Drawing.Color.Empty;
-            this.AssignResButton.Rounding = new System.Windows.Forms.Padding(5);
-            this.AssignResButton.Size = new System.Drawing.Size(147, 47);
-            this.AssignResButton.TabIndex = 10;
-            this.AssignResButton.TextAutoCenter = true;
-            this.AssignResButton.TextOffset = new System.Drawing.Point(0, 0);
-            this.AssignResButton.Click += new System.EventHandler(this.AssignResButton_Click);
             // 
             // TourOperatorDashboard
             // 

@@ -44,6 +44,7 @@ namespace DBModule3
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 70);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -52,7 +53,7 @@ namespace DBModule3
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(20, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 26);
+            this.label1.Size = new System.Drawing.Size(165, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Users";
             // 
