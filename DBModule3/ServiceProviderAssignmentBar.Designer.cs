@@ -27,10 +27,11 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
-        {
-            this.assignment = new SATATextBox();
+        {            this.assignment = new SATATextBox();
             this.searchbutton = new FrameworkTest.SATAButton();
             this.sataButton1 = new FrameworkTest.SATAButton();
+            this.assignmentsGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.assignmentsGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // assignment
@@ -42,13 +43,14 @@
             this.assignment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.assignment.Icon = null;
             this.assignment.IconSize = new System.Drawing.Size(20, 20);
-            this.assignment.Location = new System.Drawing.Point(35, 14);
+            this.assignment.Location = new System.Drawing.Point(26, 11);
+            this.assignment.Margin = new System.Windows.Forms.Padding(2);
             this.assignment.Multiline = true;
             this.assignment.Name = "assignment";
             this.assignment.PasswordChar = false;
             this.assignment.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.assignment.PlaceholderText = "Assignment ID";
-            this.assignment.Size = new System.Drawing.Size(306, 48);
+            this.assignment.Size = new System.Drawing.Size(230, 50);
             this.assignment.TabIndex = 15;
             this.assignment.Text = "sataTextBox2";
             this.assignment.Texts = "";
@@ -76,8 +78,8 @@
             this.searchbutton.ImageTint = System.Drawing.Color.Transparent;
             this.searchbutton.IsToggleButton = false;
             this.searchbutton.IsToggled = false;
-            this.searchbutton.Location = new System.Drawing.Point(620, 14);
-            this.searchbutton.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.searchbutton.Location = new System.Drawing.Point(465, 11);
+            this.searchbutton.Margin = new System.Windows.Forms.Padding(4);
             this.searchbutton.Name = "searchbutton";
             this.searchbutton.NormalBackground = System.Drawing.Color.DarkBlue;
             this.searchbutton.NormalForeColor = System.Drawing.Color.White;
@@ -88,7 +90,7 @@
             this.searchbutton.PressedImageTint = System.Drawing.Color.White;
             this.searchbutton.PressedOutline = System.Drawing.Color.Empty;
             this.searchbutton.Rounding = new System.Windows.Forms.Padding(5);
-            this.searchbutton.Size = new System.Drawing.Size(121, 48);
+            this.searchbutton.Size = new System.Drawing.Size(91, 39);
             this.searchbutton.TabIndex = 16;
             this.searchbutton.TextAutoCenter = true;
             this.searchbutton.TextOffset = new System.Drawing.Point(0, 0);
@@ -115,8 +117,8 @@
             this.sataButton1.ImageTint = System.Drawing.Color.Transparent;
             this.sataButton1.IsToggleButton = false;
             this.sataButton1.IsToggled = false;
-            this.sataButton1.Location = new System.Drawing.Point(794, 14);
-            this.sataButton1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.sataButton1.Location = new System.Drawing.Point(596, 11);
+            this.sataButton1.Margin = new System.Windows.Forms.Padding(4);
             this.sataButton1.Name = "sataButton1";
             this.sataButton1.NormalBackground = System.Drawing.Color.DarkBlue;
             this.sataButton1.NormalForeColor = System.Drawing.Color.White;
@@ -127,21 +129,31 @@
             this.sataButton1.PressedImageTint = System.Drawing.Color.White;
             this.sataButton1.PressedOutline = System.Drawing.Color.Empty;
             this.sataButton1.Rounding = new System.Windows.Forms.Padding(5);
-            this.sataButton1.Size = new System.Drawing.Size(121, 48);
+            this.sataButton1.Size = new System.Drawing.Size(91, 39);
             this.sataButton1.TabIndex = 17;
             this.sataButton1.TextAutoCenter = true;
             this.sataButton1.TextOffset = new System.Drawing.Point(0, 0);
             // 
+            // assignmentsGridView
+            // 
+            this.assignmentsGridView.Location = new System.Drawing.Point(0, 0);
+            this.assignmentsGridView.Name = "assignmentsGridView";
+            this.assignmentsGridView.Size = new System.Drawing.Size(240, 150);
+            this.assignmentsGridView.TabIndex = 0;
+            // 
             // ServiceProviderAssignmentBar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Controls.Add(this.sataButton1);
             this.Controls.Add(this.searchbutton);
             this.Controls.Add(this.assignment);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ServiceProviderAssignmentBar";
-            this.Size = new System.Drawing.Size(1003, 78);
+            this.Size = new System.Drawing.Size(752, 63);
+            this.Load += new System.EventHandler(this.ServiceProviderAssignmentBar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.assignmentsGridView)).EndInit();
             this.ResumeLayout(false);
 
         }

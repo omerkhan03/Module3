@@ -15,7 +15,7 @@ namespace DBModule3
     {
         private int userId;
 
-        public TourOperatorDashboard(int userId = 0)
+        public TourOperatorDashboard(int userId = 60)
         {
             InitializeComponent();
             this.userId = userId;
@@ -66,24 +66,57 @@ namespace DBModule3
                 MessageBox.Show($"Error loading user data: {ex.Message}",
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+        }        
 
         private void home_Click(object sender, EventArgs e)
         {
             mainpanel.Controls.Clear();
-        }
-
-        private void createtrips_Click(object sender, EventArgs e)
+        }        private void createtrips_Click(object sender, EventArgs e)
         {
-            TripCreator tripcreator = new TripCreator();
+            TripCreator tripcreator = new TripCreator(userId);
             tripcreator.Dock = DockStyle.Fill;
             mainpanel.Controls.Clear();
             mainpanel.Controls.Add(tripcreator);
         }
 
+        private void myreviews_Click(object sender, EventArgs e)
+        {
+            mainpanel.Controls.Clear();
+            TourOperatorReviews reviews = new TourOperatorReviews(userId);
+            reviews.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(reviews);
+        }
+
+        private void bookings_Click_1(object sender, EventArgs e)
+        {
+            mainpanel.Controls.Clear();
+            TourOperatorBookings bookings = new TourOperatorBookings(userId);
+            bookings.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(bookings);
+        }
+
+        private void mytrips_Click(object sender, EventArgs e)
+        {
+            mainpanel.Controls.Clear();
+            TourOperatorTrips trips = new TourOperatorTrips(userId);
+            trips.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(trips);
+        }
+
         private void logout_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void TourOperatorDashboard_Load_1(object sender, EventArgs e)
+        {
+
+        }        private void AssignResButton_Click(object sender, EventArgs e)
+        {
+            mainpanel.Controls.Clear();
+            ServiceProviderAssigner assigner = new ServiceProviderAssigner(userId);
+            assigner.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(assigner);
         }
     }
 }

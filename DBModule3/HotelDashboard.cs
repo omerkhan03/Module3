@@ -15,7 +15,7 @@ namespace DBModule3
     {
         private int userId;
 
-        public HotelDashboard(int userId = 0)
+        public HotelDashboard(int userId = 63)
         {
             InitializeComponent();
             this.userId = userId;
@@ -86,15 +86,19 @@ namespace DBModule3
             mainpanel.Controls.Clear();
             acceptrejectpanel.Controls.Clear();
 
-            ServiceProviderAssignmentBar assignmentBar = new ServiceProviderAssignmentBar();
+            ServiceProviderAssignmentBar assignmentBar = new ServiceProviderAssignmentBar(userId);
             assignmentBar.Dock = DockStyle.Fill; // <- THIS is what you need
-            acceptrejectpanel.Controls.Add(assignmentBar);
+            mainpanel.Controls.Add(assignmentBar);
         }
 
-        private void reviews_Click(object sender, EventArgs e)
+       private void reviews_Click(object sender, EventArgs e)
         {
             mainpanel.Controls.Clear();
+            acceptrejectpanel.Controls.Clear();
 
+            ServiceProviderReviews reviewsControl = new ServiceProviderReviews(userId);
+            reviewsControl.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(reviewsControl);
         }
 
         private void myreports_Click(object sender, EventArgs e)

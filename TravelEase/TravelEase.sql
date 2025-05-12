@@ -613,3 +613,32 @@ UNION ALL
 SELECT 'AbandonedBooking', COUNT(*) FROM AbandonedBooking;
 
 PRINT 'Data import completed successfully.';
+
+Select * from Traveler t
+join TravelerPreference tp
+on t.traveler_id = tp.traveler_id
+join Preference p
+on tp.preference_id = p.preference_id
+where first_name = 'Wasim';
+
+Select  * from [User];
+
+select top 10 * from Traveler t
+join Booking b
+on t.traveler_id = b.traveler_id 
+join Trip
+on Trip.trip_id = b.trip_id
+join Payment p 
+on p.booking_id = b.booking_id
+where b.booking_id = 2
+
+Select * from Review where review.provider_id = 2
+
+Select * from AbandonedBooking
+
+Select * from DigitalPass
+
+Select  * from Trip
+
+Select * from TourOperator
+

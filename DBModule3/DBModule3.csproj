@@ -53,6 +53,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -76,6 +77,12 @@
     <Compile Include="AllTrips.Designer.cs">
       <DependentUpon>AllTrips.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookingAnalysisReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingRevenueReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="CancelBooking.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,6 +90,9 @@
       <DependentUpon>CancelBooking.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseHelper.cs" />
+    <Compile Include="DestinationAnalyticsReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GuideDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +129,15 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaymentAnalyticsReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformAnalytics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlatformGrowthReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReviewMaker.cs">
@@ -127,17 +146,35 @@
     <Compile Include="ReviewMaker.Designer.cs">
       <DependentUpon>ReviewMaker.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReviewManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReviewManager.Designer.cs">
+      <DependentUpon>ReviewManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="SearchBar.Designer.cs">
       <DependentUpon>SearchBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="ServiceProviderAssigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServiceProviderAssigner.Designer.cs">
+      <DependentUpon>ServiceProviderAssigner.cs</DependentUpon>
+    </Compile>
     <Compile Include="ServiceProviderAssignmentBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ServiceProviderAssignmentBar.Designer.cs">
       <DependentUpon>ServiceProviderAssignmentBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceProviderReviews.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServiceProviderReviews.Designer.cs">
+      <DependentUpon>ServiceProviderReviews.cs</DependentUpon>
     </Compile>
     <Compile Include="ServiceProviderSignUp.cs">
       <SubType>Form</SubType>
@@ -151,17 +188,32 @@
     <Compile Include="Sidebar.Designer.cs">
       <DependentUpon>Sidebar.cs</DependentUpon>
     </Compile>
+    <Compile Include="TourOperatorBookings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="TourOperatorDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TourOperatorDashboard.Designer.cs">
       <DependentUpon>TourOperatorDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="TourOperatorReviews.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TourOperatorReviews.Designer.cs">
+      <DependentUpon>TourOperatorReviews.cs</DependentUpon>
+    </Compile>
     <Compile Include="TourOperatorSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TourOperatorSignUp.Designer.cs">
       <DependentUpon>TourOperatorSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourOperatorTrips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TourOperatorTrips.Designer.cs">
+      <DependentUpon>TourOperatorTrips.cs</DependentUpon>
     </Compile>
     <Compile Include="TransportDashboard.cs">
       <SubType>Form</SubType>
@@ -185,6 +237,9 @@
     </Compile>
     <Compile Include="TravelerDashboard.Designer.cs">
       <DependentUpon>TravelerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelerDemographicsReport.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="TravelerPreferences.cs">
       <SubType>Form</SubType>
@@ -210,6 +265,12 @@
     <Compile Include="TravelPasses.Designer.cs">
       <DependentUpon>TravelPasses.cs</DependentUpon>
     </Compile>
+    <Compile Include="TripCategoryManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TripCategoryManager.Designer.cs">
+      <DependentUpon>TripCategoryManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="TripCreator.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -221,6 +282,12 @@
     </Compile>
     <Compile Include="UserBookings.Designer.cs">
       <DependentUpon>UserBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserManager.Designer.cs">
+      <DependentUpon>UserManager.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
@@ -265,8 +332,14 @@
     <EmbeddedResource Include="SearchBar.resx">
       <DependentUpon>SearchBar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ServiceProviderAssigner.resx">
+      <DependentUpon>ServiceProviderAssigner.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ServiceProviderAssignmentBar.resx">
       <DependentUpon>ServiceProviderAssignmentBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceProviderReviews.resx">
+      <DependentUpon>ServiceProviderReviews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ServiceProviderSignUp.resx">
       <DependentUpon>ServiceProviderSignUp.cs</DependentUpon>
@@ -300,6 +373,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TravelPasses.resx">
       <DependentUpon>TravelPasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TripCategoryManager.resx">
+      <DependentUpon>TripCategoryManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TripCreator.resx">
       <DependentUpon>TripCreator.cs</DependentUpon>

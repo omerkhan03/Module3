@@ -15,7 +15,7 @@ namespace DBModule3
     {
         private int userId;
 
-        public GuideDashboard(int userId = 0)
+        public GuideDashboard(int userId = 65)
         {
             InitializeComponent();
             this.userId = userId;
@@ -77,19 +77,21 @@ namespace DBModule3
         }
 
         private void assignments_Click(object sender, EventArgs e)
+        {            mainpanel.Controls.Clear();
+            acceptrejectpanel.Controls.Clear();
+
+            ServiceProviderAssignmentBar assignmentBar = new ServiceProviderAssignmentBar(userId);
+            assignmentBar.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(assignmentBar);
+        }        
+        private void reviews_Click(object sender, EventArgs e)
         {
             mainpanel.Controls.Clear();
             acceptrejectpanel.Controls.Clear();
 
-            ServiceProviderAssignmentBar assignmentBar = new ServiceProviderAssignmentBar();
-            assignmentBar.Dock = DockStyle.Fill; // <- THIS is what you need
-            acceptrejectpanel.Controls.Add(assignmentBar);
-        }
-
-        private void reviews_Click(object sender, EventArgs e)
-        {
-            mainpanel.Controls.Clear();
-
+            ServiceProviderReviews reviewsControl = new ServiceProviderReviews(userId);
+            reviewsControl.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(reviewsControl);
         }
 
         private void myreports_Click(object sender, EventArgs e)
@@ -101,6 +103,11 @@ namespace DBModule3
         private void home_Click(object sender, EventArgs e)
         {
             mainpanel.Controls.Clear();
+
+        }
+
+        private void GuideDashboard_Load_1(object sender, EventArgs e)
+        {
 
         }
     }
