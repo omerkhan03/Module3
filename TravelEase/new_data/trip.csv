@@ -1,0 +1,51 @@
+trip_id,operator_id,category_id,destination_id,itinerary_id,trip_name,description,start_date,end_date,duration,price,capacity,sustainability_score,wheelchair_access
+1,1,12,1,1,"Parisian Luxury Escape","Exclusive week-long experience in Paris featuring luxury accommodations and private tours","2025-05-15","2025-05-22",7,4500.00,8,"A+",0
+2,2,2,2,2,"Bali Adventure Trek","Active exploration of Bali's volcanic mountains, rice terraces, and hidden waterfalls","2025-06-01","2025-06-11",10,2200.00,12,"B",0
+3,3,3,22,3,"Exotic Cambodia Discovery","Cultural immersion in Cambodia's ancient temples and local communities","2025-05-20","2025-05-29",9,1800.00,10,"A",1
+4,4,11,3,4,"Family Fun Orlando","Family-focused vacation package including theme parks and kid-friendly activities","2025-06-15","2025-06-21",6,3200.00,15,"B+",1
+5,5,9,5,5,"Historical Rome Walking Tour","In-depth exploration of Rome's ancient ruins and historical significance","2025-05-25","2025-05-30",5,1500.00,12,"A",1
+6,6,12,24,6,"Luxury Alps Retreat","Premium ski and spa experience in the Swiss Alps with exclusive accommodations","2025-07-10","2025-07-18",8,5800.00,6,"A",0
+7,7,10,23,7,"Costa Rica Eco Adventure","Sustainable travel experience through Costa Rica's diverse ecosystems","2025-06-05","2025-06-17",12,2400.00,10,"A+",1
+8,8,1,29,8,"Tropical Maldives Getaway","Beach relaxation package at premium overwater bungalows in the Maldives","2025-08-01","2025-08-09",8,4200.00,2,"B+",0
+9,9,44,38,9,"Mountaineering in Nepal","Guided trek through the Himalayas with experienced mountain guides","2025-09-10","2025-09-24",14,3100.00,8,"B",0
+10,10,5,4,10,"Urban Japan Explorer","City-hopping tour through Tokyo, Kyoto, and Osaka with cultural experiences","2025-07-05","2025-07-15",10,3400.00,12,"A",1
+11,1,15,14,11,"Greek Island Luxury Cruise","Premium cruise experience through the Greek islands with gourmet dining","2025-08-15","2025-08-24",9,5100.00,20,"A",0
+12,2,6,17,12,"Amazon Rainforest Expedition","Adventure deep into the Amazon with wildlife spotting and canopy tours","2025-07-20","2025-07-28",8,2800.00,10,"A+",0
+13,3,9,39,13,"Ancient Egypt Uncovered","Cultural journey through Egypt's pharaonic history and monuments","2025-09-01","2025-09-12",11,2600.00,12,"B+",1
+14,4,11,3,14,"Disney World Family Adventure","Comprehensive family package for all Disney parks with character dining","2025-06-25","2025-07-02",7,3600.00,16,"B",1
+15,5,9,21,15,"Medieval Europe Tour","Historical exploration of Europe's best preserved medieval towns and castles","2025-08-10","2025-08-22",12,2900.00,14,"A",1
+16,6,23,1,16,"Monaco Grand Prix VIP","Exclusive experience of the Monaco Grand Prix with premium viewing position","2025-05-25","2025-05-29",4,7500.00,4,"B+",0
+17,7,10,36,17,"Galapagos Conservation Cruise","Eco-friendly cruise through the Galapagos focused on wildlife conservation","2025-09-15","2025-09-25",10,4200.00,16,"A+",1
+18,8,14,28,18,"Caribbean Island Hopping","Relaxing beach vacation across multiple Caribbean islands","2025-07-15","2025-07-27",12,3800.00,8,"B",1
+19,9,26,38,19,"Everest Base Camp Trek","Challenging trek to Everest Base Camp with professional mountaineering guides","2025-10-01","2025-10-17",16,3900.00,10,"B+",0
+20,10,24,5,20,"Art & Architecture Europe","Cultural tour focusing on Europe's most significant artistic and architectural sites","2025-08-05","2025-08-20",15,3300.00,12,"A",1
+21,1,19,34,21,"Safari & Vineyard Luxury Tour","Combination of wildlife safari and premium wine experiences in South Africa","2025-09-20","2025-09-30",10,6200.00,8,"A",0
+22,2,49,27,22,"New Zealand Adventure Sports","Adrenaline-pumping adventure package in Queenstown with multiple extreme activities","2025-11-10","2025-11-18",8,2900.00,10,"B",0
+23,3,20,22,23,"Ancient Temples of Asia","Spiritual journey through significant temple sites across Southeast Asia","2025-10-15","2025-10-29",14,2700.00,12,"A",1
+24,4,11,3,24,"Orlando & Bahamas Family Package","Combined theme park and beach relaxation perfect for families","2025-07-10","2025-07-20",10,4100.00,16,"B+",1
+25,5,24,5,25,"Renaissance Art Tour","In-depth exploration of Renaissance art and architecture in Italy","2025-06-15","2025-06-23",8,2200.00,10,"A",1
+26,6,8,24,26,"Alpine Ski & Spa Luxury","Premium skiing experience with luxury spa treatments in the Swiss Alps","2025-12-10","2025-12-17",7,6400.00,4,"A+",0
+27,7,10,23,27,"Coastal Costa Rica Eco Tour","Eco-friendly exploration of Costa Rica's stunning Pacific coastline","2025-08-01","2025-08-10",9,2100.00,12,"A+",1
+28,8,29,46,28,"Tahiti Overwater Experience","Romantic getaway in premium overwater bungalows with snorkeling packages","2025-09-05","2025-09-13",8,5100.00,2,"A",0
+29,9,44,24,29,"Alpine Climbing Adventure","Professional guided climbing experiences in the European Alps","2025-07-15","2025-07-27",12,3600.00,8,"B",0
+30,10,3,4,30,"Tokyo & Kyoto Cultural Immersion","Deep dive into Japanese traditional and modern culture across key cities","2025-10-10","2025-10-21",11,2900.00,10,"A",1
+31,1,15,33,31,"Mediterranean Luxury Cruise","Premium cruise experience through the Mediterranean with exclusive shore excursions","2025-09-01","2025-09-13",12,6800.00,24,"A+",0
+32,2,26,17,32,"Patagonia Hiking Expedition","Adventure through Patagonia's most dramatic landscapes and national parks","2025-11-05","2025-11-19",14,3400.00,10,"A",0
+33,3,3,43,33,"India Cultural Journey","Immersive experience of India's diverse cultural traditions and historical sites","2025-10-20","2025-11-04",15,2500.00,12,"B+",1
+34,4,11,28,34,"Caribbean Family Cruise","All-inclusive family cruise through the Caribbean islands with kids activities","2025-08-15","2025-08-23",8,3900.00,20,"B",1
+35,5,3,30,35,"Classical Music Tour Vienna","Cultural experience focused on Vienna's rich musical heritage and concert halls","2025-06-20","2025-06-26",6,1800.00,14,"A",1
+36,6,25,9,36,"Dubai Luxury Shopping","Premium shopping experience with VIP access to Dubai's luxury retailers","2025-05-15","2025-05-20",5,4200.00,4,"B+",0
+37,7,46,23,37,"Costa Rica Wildlife Photography","Specialized eco-tour designed for wildlife photography opportunities","2025-07-20","2025-07-30",10,2800.00,8,"A+",0
+38,8,1,46,38,"Fiji Island Retreat","Relaxing island vacation with premium beach accommodations and water activities","2025-10-10","2025-10-19",9,4500.00,4,"A",1
+39,9,26,24,39,"Mont Blanc Circuit","Classic trekking route around Mont Blanc through France, Italy and Switzerland","2025-08-05","2025-08-16",11,2900.00,12,"B+",0
+40,10,24,1,40,"European Art Capitals","Cultural tour of Europe's major art cities including Paris, Florence and Amsterdam","2025-09-15","2025-09-29",14,3600.00,12,"A",1
+41,1,6,49,41,"Antarctic Luxury Expedition","Premium cruise to Antarctica with expert naturalists and photographers","2025-12-01","2025-12-19",18,15000.00,20,"A+",0
+42,2,2,38,42,"Himalayan Mountain Biking","Adventure cycling through remote Himalayan villages and mountain passes","2025-09-10","2025-09-22",12,3100.00,8,"B",0
+43,3,36,22,43,"Southeast Asia Heritage Trail","Cultural journey through UNESCO World Heritage sites in Southeast Asia","2025-11-05","2025-11-21",16,2900.00,14,"A",1
+44,4,11,3,44,"Orlando Multi-Park Family Package","Comprehensive family vacation covering all major Orlando theme parks","2025-07-25","2025-08-02",8,4200.00,16,"B+",1
+45,5,9,30,45,"European Castles & Palaces","Historical tour of Europe's most impressive royal residences and fortifications","2025-10-05","2025-10-18",13,3100.00,14,"A",1
+46,6,12,1,46,"Monaco Yacht Week","Exclusive yachting experience along the French Riviera with premium services","2025-06-10","2025-06-17",7,9800.00,6,"A+",0
+47,7,6,2,47,"Borneo Wildlife Safari","Eco-friendly exploration of Borneo's unique wildlife and ecosystems","2025-08-20","2025-08-31",11,2600.00,10,"A+",0
+48,8,14,8,48,"Seychelles Island Hopping","Luxury beach vacation across multiple islands in the Seychelles","2025-09-15","2025-09-25",10,5600.00,4,"A",0
+49,9,44,16,49,"Kilimanjaro Summit Climb","Professional guided climb to the summit of Mount Kilimanjaro","2025-07-01","2025-07-10",9,4200.00,10,"B",0
+50,10,5,37,50,"European Christmas Markets","Seasonal tour of Europe's most enchanting Christmas markets and winter traditions","2025-12-10","2025-12-18",8,2400.00,14,"A",1

@@ -1,0 +1,11 @@
+operator_id,user_id,company_name,description,address
+1,53,Deluxe Tours,"Premium tour operator specializing in luxury travel experiences across Europe and Asia","1234 Fifth Avenue, New York, NY 10022"
+2,54,Global Adventures,"Adventure-focused tour company offering expedition trips to remote destinations","567 Adventure Way, Denver, CO 80202"
+3,55,Exotic Expeditions,"Specialized in unique cultural immersion trips to exotic locations","890 Palm Drive, Los Angeles, CA 90210"
+4,56,Wonder World Tours,"Family-friendly tour packages to popular tourist destinations worldwide","432 Rainbow Road, Orlando, FL 32801"
+5,57,Heritage Travel,"Cultural and historical tour experiences focusing on world heritage sites","765 History Lane, Boston, MA 02108"
+6,58,Luxe Voyages,"Ultra-luxury small group tours with exclusive access to unique experiences","987 Luxury Boulevard, Beverly Hills, CA 90210"
+7,59,Eco Adventures,"Eco-friendly and sustainable tours to natural wonders and protected areas","321 Green Street, Portland, OR 97204"
+8,60,Beachcomber Travel,"Beach and island vacation packages specializing in tropical paradises","654 Shoreline Drive, Miami, FL 33139"
+9,61,Mountain Explorers,"Alpine adventures and mountain trekking experiences around the world","876 Summit Avenue, Salt Lake City, UT 84101"
+10,62,Cityscape Tours,"Urban exploration tours showcasing the world's most vibrant cities","543 Metropolitan Way, Chicago, IL 60601"

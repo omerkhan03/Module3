@@ -41,14 +41,12 @@ namespace DBModule3
             try
             {
                 // Insert data into database
-                int userId = InsertTourOperatorData();
-                
-                if (userId > 0)
+                int userId = InsertTourOperatorData();                  if (userId > 0)
                 {
                     MessageBox.Show("Tour Operator registered successfully!",
                         "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //TourOperatorDashboard tourOp = new TourOperatorDashboard();
-                    //tourOp.Show();
+                    TourOperatorDashboard tourOp = new TourOperatorDashboard(userId);
+                    tourOp.Show();
                     this.Hide();
                 }
             }

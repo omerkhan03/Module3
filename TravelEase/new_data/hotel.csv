@@ -1,0 +1,8 @@
+hotel_id,provider_id,hotel_name,location,total_rooms
+1,1,The Ritz Grand,"New York, NY",350
+2,4,Grand Royal Hotel,"London, UK",275
+3,7,Luxury Beach Resort,"Cancun, Mexico",200
+4,11,Star Hotel & Suites,"Paris, France",180
+5,14,Boutique Collection,"Barcelona, Spain",60
+6,17,Eco Forest Retreat,"Costa Rica",40
+7,20,Seaside Paradise Resort,"Bali, Indonesia",150

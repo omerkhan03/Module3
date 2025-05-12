@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DBModule3
 {
-    public partial class DashboardTest : Form
+    public partial class TripCreator : UserControl
     {
-        public DashboardTest()
+        public TripCreator()
         {
             InitializeComponent();
         }

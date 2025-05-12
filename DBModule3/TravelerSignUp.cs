@@ -64,19 +64,18 @@ namespace DBModule3
                 {
                     // Ask if they want to set preferences now
                     var result = MessageBox.Show("Registration successful! Would you like to set your travel preferences now?",
-                        "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                    if (result == DialogResult.Yes)
+                        "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);                    if (result == DialogResult.Yes)
                     {
                         TravelerPreferences preferencesForm = new TravelerPreferences();
+                        preferencesForm.UserId = userId;
+                        // We'll get the traveler ID from the user ID in the preferences form
                         preferencesForm.Show();
-                    }
-                    else
+                    }else
                     {
                         MessageBox.Show("You can set your preferences later from your profile.",
                             "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        //TravelerDashboard travelerDashboard = new TravelerDashboard();
-                        //travelerDashboard.Show();
+                        TravelerDashboard travelerDashboard = new TravelerDashboard(userId);
+                        travelerDashboard.Show();
                     }
 
                     this.Hide();

@@ -3,7 +3,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 
 namespace DBModule3
-{    public partial class GuideRegistration : Form
+{    
+    public partial class GuideRegistration : Form
     {
         // Property to store the provider ID passed from ServiceProviderSignUp
         public int ProviderId { get; set; }
@@ -32,7 +33,9 @@ namespace DBModule3
             Landing landing = new Landing();
             landing.Show();
             this.Hide();
-        }        private void register_Click(object sender, EventArgs e)
+        }        
+        
+        private void register_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(guideNameTextBox.Text) ||
              string.IsNullOrEmpty(specializationTextBox.Text) ||
@@ -51,13 +54,11 @@ namespace DBModule3
             }
             
             try
-            {
-                // Insert guide-specific data into Guide table and languages
+            {                // Insert guide-specific data into Guide table and languages
                 RegisterGuide();
-                
-                MessageBox.Show("Registration Successful");
-                //GuideDashboard guideDash = new GuideDashboard();
-                //guideDash.Show();
+                  MessageBox.Show("Registration Successful");
+                GuideDashboard guideDash = new GuideDashboard(GetUserIdForProvider(ProviderId));
+                guideDash.Show();
                 this.Close();
             }
             catch (Exception ex)
@@ -162,6 +163,39 @@ namespace DBModule3
                     throw new Exception($"Database connection error: {ex.Message}", ex);
                 }
             }
+        }
+
+        private int GetUserIdForProvider(int providerId)
+        {
+            int userId = 0;
+            
+            using (SqlConnection connection = DatabaseHelper.CreateConnection())
+            {
+                try
+                {
+                    connection.Open();
+                    
+                    string query = "SELECT user_id FROM ServiceProvider WHERE provider_id = @ProviderId";
+                    
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@ProviderId", providerId);
+                        
+                        object result = cmd.ExecuteScalar();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            userId = Convert.ToInt32(result);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error retrieving user ID: {ex.Message}", 
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
+            return userId;
         }
     }
 }

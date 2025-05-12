@@ -160,4 +160,16 @@
   <data name="image-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bxs_book_reader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bxs-book-reader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bxs_comment_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bxs_comment_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bxs_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bxs_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report_solid_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report_solid_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

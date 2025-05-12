@@ -1,0 +1,9 @@
+transport_id,provider_id,transport_type,vehicle_details,capacity
+1,2,Luxury Car,"Fleet of luxury sedans and SUVs including Mercedes S-Class and BMW 7 Series",4
+2,5,Shuttle,"Medium-sized shuttle buses for airport transfers and city tours",15
+3,8,Premium,"High-end limousines and executive cars for VIP transportation",6
+4,10,Economy,"Budget-friendly compact cars and vans for cost-effective transportation",8
+5,12,Express,"Rapid transit vans specialized in airport and hotel transfers",12
+6,15,City,"Urban transportation fleet including eco-friendly hybrid vehicles",5
+7,18,Luxury SUV,"Fleet of high-end SUVs including Range Rover and Cadillac Escalade",7
+8,21,Airport,"Specialized airport transfer service with 24/7 availability",10

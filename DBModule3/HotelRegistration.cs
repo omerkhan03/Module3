@@ -3,7 +3,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 
 namespace DBModule3
-{    public partial class HotelRegistration : Form
+{    
+    public partial class HotelRegistration : Form
     {
         // Property to store the provider ID passed from ServiceProviderSignUp
         public int ProviderId { get; set; }
@@ -19,6 +20,7 @@ namespace DBModule3
         private void title_Click(object sender, EventArgs e)
         {
         }
+        
         private void title_Click_1(object sender, EventArgs e)
         {
 
@@ -29,7 +31,9 @@ namespace DBModule3
             Landing landing = new Landing();
             landing.Show();
             this.Hide();
-        }        private void register_Click(object sender, EventArgs e)
+        }        
+        
+        private void register_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(locationTextBox.Text) ||
             !int.TryParse(totalRoomsTextBox.Text, out int totalRooms))
@@ -47,14 +51,13 @@ namespace DBModule3
             }
             
             try
-            {
+            {                
                 // Insert hotel-specific data into Hotel table
                 RegisterHotel();
-                
                 MessageBox.Show("Hotel registered successfully!",
                     "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //HotelDashboard hotelDash = new HotelDashboard();
-                //hotelDash.Show();
+                HotelDashboard hotelDash = new HotelDashboard(GetUserIdForProvider(ProviderId));
+                hotelDash.Show();
                 this.Close();
             }
             catch (Exception ex)
@@ -74,7 +77,7 @@ namespace DBModule3
                     
                     string insertHotelQuery = @"INSERT INTO Hotel (provider_id, hotel_name, location, total_rooms) 
                                                VALUES (@ProviderId, @HotelName, @Location, @TotalRooms)";
-                      using (SqlCommand cmd = new SqlCommand(insertHotelQuery, connection))
+                    using (SqlCommand cmd = new SqlCommand(insertHotelQuery, connection))
                     {
                         cmd.Parameters.AddWithValue("@ProviderId", ProviderId);
                         cmd.Parameters.AddWithValue("@HotelName", HotelName); // Use the hotel name property
@@ -89,6 +92,39 @@ namespace DBModule3
                     throw new Exception($"Error registering hotel: {ex.Message}", ex);
                 }
             }
+        }
+
+        private int GetUserIdForProvider(int providerId)
+        {
+            int userId = 0;
+            
+            using (SqlConnection connection = DatabaseHelper.CreateConnection())
+            {
+                try
+                {
+                    connection.Open();
+                    
+                    string query = "SELECT user_id FROM ServiceProvider WHERE provider_id = @ProviderId";
+                    
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@ProviderId", providerId);
+                        
+                        object result = cmd.ExecuteScalar();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            userId = Convert.ToInt32(result);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error retrieving user ID: {ex.Message}", 
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
+            return userId;
         }
     }
 }

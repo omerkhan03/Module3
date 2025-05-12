@@ -123,6 +123,16 @@ namespace DBModule3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bxs_book_reader {
+            get {
+                object obj = ResourceManager.GetObject("bxs_book_reader", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bxs_calendar_check {
             get {
                 object obj = ResourceManager.GetObject("bxs-calendar-check", resourceCulture);
@@ -133,9 +143,29 @@ namespace DBModule3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bxs_comment_edit {
+            get {
+                object obj = ResourceManager.GetObject("bxs_comment_edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bxs_school {
             get {
                 object obj = ResourceManager.GetObject("bxs-school", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bxs_user {
+            get {
+                object obj = ResourceManager.GetObject("bxs_user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +196,16 @@ namespace DBModule3.Properties {
         internal static System.Drawing.Bitmap nice {
             get {
                 object obj = ResourceManager.GetObject("nice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap report_solid_24 {
+            get {
+                object obj = ResourceManager.GetObject("report_solid_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

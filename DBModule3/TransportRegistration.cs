@@ -3,7 +3,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 
 namespace DBModule3
-{    public partial class TransportRegistration : Form
+{    
+    public partial class TransportRegistration : Form
     {
         // Property to store the provider ID passed from ServiceProviderSignUp
         public int ProviderId { get; set; }
@@ -16,11 +17,13 @@ namespace DBModule3
 
         private void title_Click(object sender, EventArgs e)
         {
-        }        private void registerbutton_Click(object sender, EventArgs e)
+        }        
+        
+        private void registerbutton_Click(object sender, EventArgs e)
         {
             if (transportTypeComboBox.SelectedItem == null ||
-        string.IsNullOrEmpty(vehicleDetailsTextBox.Text) ||
-        !int.TryParse(capacityTextBox.Text, out int capacity))
+                string.IsNullOrEmpty(vehicleDetailsTextBox.Text) ||
+                !int.TryParse(capacityTextBox.Text, out int capacity))
             {
                 MessageBox.Show("Please fill all fields correctly. Capacity must be a number.",
                     "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -37,11 +40,9 @@ namespace DBModule3
             try
             {
                 // Insert transport-specific data into TransportService table
-                RegisterTransport();
-                
-                MessageBox.Show("Registration Successful");
-                //TransportProviderDashboard transportDash = new TransportProviderDashboard();
-                //transportDash.Show();
+                RegisterTransport();                MessageBox.Show("Registration Successful");
+                TransportDashboard transportDash = new TransportDashboard(GetUserIdForProvider(ProviderId));
+                transportDash.Show();
                 this.Close();
             }
             catch (Exception ex)
@@ -77,6 +78,39 @@ namespace DBModule3
                     throw new Exception($"Error registering transport service: {ex.Message}", ex);
                 }
             }
+        }
+
+        private int GetUserIdForProvider(int providerId)
+        {
+            int userId = 0;
+            
+            using (SqlConnection connection = DatabaseHelper.CreateConnection())
+            {
+                try
+                {
+                    connection.Open();
+                    
+                    string query = "SELECT user_id FROM ServiceProvider WHERE provider_id = @ProviderId";
+                    
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@ProviderId", providerId);
+                        
+                        object result = cmd.ExecuteScalar();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            userId = Convert.ToInt32(result);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error retrieving user ID: {ex.Message}", 
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
+            return userId;
         }
 
         private void back_Click(object sender, EventArgs e)
