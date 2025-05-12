@@ -299,6 +299,9 @@
     <Compile Include="UserManager.Designer.cs">
       <DependentUpon>UserManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="WishlistPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -398,6 +401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserManager.resx">
       <DependentUpon>UserManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WishlistPanel.resx">
+      <DependentUpon>WishlistPanel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

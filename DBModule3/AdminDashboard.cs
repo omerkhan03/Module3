@@ -71,7 +71,9 @@ namespace DBModule3
 
         private void logout_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Landing landing = new Landing();
+            landing.Show();
+            this.Close();
         }
 
         private void bookings_Click(object sender, EventArgs e)

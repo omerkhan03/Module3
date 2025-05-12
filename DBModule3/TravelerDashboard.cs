@@ -16,11 +16,15 @@ namespace DBModule3
         private int userId;
         private SearchBar searchBar;
         private Sidebar sidebar;
+        private Button wishlistButton;
 
         public TravelerDashboard(int userId = 1)
         {
             InitializeComponent();
             this.userId = userId;
+
+            // Add Wishlist Button
+            //InitializeWishlistButton();
 
             // Initialize the dashboard panels
             InitializeWorkPanel();
@@ -28,7 +32,31 @@ namespace DBModule3
 
             // Show all trips in main panel
             ShowAllTrips();
-        }        
+        }
+
+        // private void InitializeWishlistButton()
+        // {
+        //     wishlistButton = new Button();
+        //     wishlistButton.Text = "My Wishlist";
+        //     wishlistButton.Font = new Font("Century Gothic", 10F, FontStyle.Bold);
+        //     wishlistButton.Size = new Size(100, 30);
+        //     wishlistButton.Location = new Point(mainpanel.Width - 120, 10);
+        //     wishlistButton.BackColor = Color.FromArgb(20, 25, 72);
+        //     wishlistButton.ForeColor = Color.White;
+        //     wishlistButton.FlatStyle = FlatStyle.Flat;
+        //     wishlistButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+        //     wishlistButton.Click += WishlistButton_Click;
+        //     this.Controls.Add(wishlistButton);
+        // }
+
+        // private void WishlistButton_Click(object sender, EventArgs e)
+        // {
+        //     mainpanel.Controls.Clear();
+        //     WishlistPanel wishlistPanel = new WishlistPanel(userId);
+        //     wishlistPanel.Dock = DockStyle.Fill;
+        //     mainpanel.Controls.Add(wishlistPanel);
+        // }
+
         private void InitializeWorkPanel()
         {
             workpanel.Controls.Clear();
@@ -218,6 +246,11 @@ namespace DBModule3
         private void wishlistbutton_Click(object sender, EventArgs e)
         {
             // Add wishlist functionality here
+
+            mainpanel.Controls.Clear();
+            WishlistPanel wishlistPanel = new WishlistPanel(userId);
+            wishlistPanel.Dock = DockStyle.Fill;
+            mainpanel.Controls.Add(wishlistPanel);
         }
     }
 }
