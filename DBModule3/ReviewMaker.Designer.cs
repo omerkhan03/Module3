@@ -89,8 +89,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(255, 35);
             this.textBox2.TabIndex = 53;
-            // 
-            // destinationtext
+            //            // destinationtext
             // 
             this.destinationtext.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.destinationtext.Location = new System.Drawing.Point(178, 151);
@@ -98,6 +97,7 @@
             this.destinationtext.Name = "destinationtext";
             this.destinationtext.Size = new System.Drawing.Size(255, 35);
             this.destinationtext.TabIndex = 52;
+            this.destinationtext.Leave += new System.EventHandler(this.destinationtext_Leave);
             // 
             // textBox1
             // 

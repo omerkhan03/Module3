@@ -28,99 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.sataTextBox5 = new SATATextBox();
-            this.sataTextBox4 = new SATATextBox();
-            this.sataTextBox3 = new SATATextBox();
-            this.sataTextBox2 = new SATATextBox();
+            this.GroupSize = new SATATextBox();
+            this.DurationInDays = new SATATextBox();
+            this.MaxBudget = new SATATextBox();
+            this.MinBudget = new SATATextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // sataTextBox5
+            // GroupSize
             // 
-            this.sataTextBox5.BorderColor = System.Drawing.Color.Transparent;
-            this.sataTextBox5.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(68)))), ((int)(((byte)(142)))));
-            this.sataTextBox5.BorderRadius = 5;
-            this.sataTextBox5.BorderSize = 3;
-            this.sataTextBox5.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sataTextBox5.Icon = null;
-            this.sataTextBox5.IconSize = new System.Drawing.Size(20, 20);
-            this.sataTextBox5.Location = new System.Drawing.Point(23, 276);
-            this.sataTextBox5.Multiline = true;
-            this.sataTextBox5.Name = "sataTextBox5";
-            this.sataTextBox5.PasswordChar = false;
-            this.sataTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.sataTextBox5.PlaceholderText = "Days";
-            this.sataTextBox5.Size = new System.Drawing.Size(77, 45);
-            this.sataTextBox5.TabIndex = 28;
-            this.sataTextBox5.Text = "sataTextBox5";
-            this.sataTextBox5.Texts = "";
-            this.sataTextBox5.UnderlinedStyle = false;
+            this.GroupSize.BorderColor = System.Drawing.Color.Transparent;
+            this.GroupSize.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(68)))), ((int)(((byte)(142)))));
+            this.GroupSize.BorderRadius = 5;
+            this.GroupSize.BorderSize = 3;
+            this.GroupSize.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupSize.Icon = null;
+            this.GroupSize.IconSize = new System.Drawing.Size(20, 20);
+            this.GroupSize.Location = new System.Drawing.Point(17, 224);
+            this.GroupSize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupSize.Multiline = true;
+            this.GroupSize.Name = "GroupSize";
+            this.GroupSize.PasswordChar = false;
+            this.GroupSize.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.GroupSize.PlaceholderText = "Size";
+            this.GroupSize.Size = new System.Drawing.Size(58, 37);
+            this.GroupSize.TabIndex = 28;
+            this.GroupSize.Text = "sataTextBox5";
+            this.GroupSize.Texts = "";
+            this.GroupSize.UnderlinedStyle = false;
             // 
-            // sataTextBox4
+            // DurationInDays
             // 
-            this.sataTextBox4.BorderColor = System.Drawing.Color.Transparent;
-            this.sataTextBox4.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(68)))), ((int)(((byte)(142)))));
-            this.sataTextBox4.BorderRadius = 5;
-            this.sataTextBox4.BorderSize = 3;
-            this.sataTextBox4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sataTextBox4.Icon = null;
-            this.sataTextBox4.IconSize = new System.Drawing.Size(20, 20);
-            this.sataTextBox4.Location = new System.Drawing.Point(23, 200);
-            this.sataTextBox4.Multiline = true;
-            this.sataTextBox4.Name = "sataTextBox4";
-            this.sataTextBox4.PasswordChar = false;
-            this.sataTextBox4.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.sataTextBox4.PlaceholderText = "Days";
-            this.sataTextBox4.Size = new System.Drawing.Size(77, 45);
-            this.sataTextBox4.TabIndex = 27;
-            this.sataTextBox4.Text = "sataTextBox4";
-            this.sataTextBox4.Texts = "";
-            this.sataTextBox4.UnderlinedStyle = false;
+            this.DurationInDays.BorderColor = System.Drawing.Color.Transparent;
+            this.DurationInDays.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(68)))), ((int)(((byte)(142)))));
+            this.DurationInDays.BorderRadius = 5;
+            this.DurationInDays.BorderSize = 3;
+            this.DurationInDays.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DurationInDays.Icon = null;
+            this.DurationInDays.IconSize = new System.Drawing.Size(20, 20);
+            this.DurationInDays.Location = new System.Drawing.Point(17, 162);
+            this.DurationInDays.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DurationInDays.Multiline = true;
+            this.DurationInDays.Name = "DurationInDays";
+            this.DurationInDays.PasswordChar = false;
+            this.DurationInDays.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.DurationInDays.PlaceholderText = "Days";
+            this.DurationInDays.Size = new System.Drawing.Size(58, 37);
+            this.DurationInDays.TabIndex = 27;
+            this.DurationInDays.Text = "sataTextBox4";
+            this.DurationInDays.Texts = "";
+            this.DurationInDays.UnderlinedStyle = false;
             // 
-            // sataTextBox3
+            // MaxBudget
             // 
-            this.sataTextBox3.BorderColor = System.Drawing.Color.Transparent;
-            this.sataTextBox3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(68)))), ((int)(((byte)(142)))));
-            this.sataTextBox3.BorderRadius = 5;
-            this.sataTextBox3.BorderSize = 3;
-            this.sataTextBox3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sataTextBox3.Icon = null;
-            this.sataTextBox3.IconSize = new System.Drawing.Size(20, 20);
-            this.sataTextBox3.Location = new System.Drawing.Point(113, 126);
-            this.sataTextBox3.Multiline = true;
-            this.sataTextBox3.Name = "sataTextBox3";
-            this.sataTextBox3.PasswordChar = false;
-            this.sataTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.sataTextBox3.PlaceholderText = "Max";
-            this.sataTextBox3.Size = new System.Drawing.Size(77, 45);
-            this.sataTextBox3.TabIndex = 26;
-            this.sataTextBox3.Text = "sataTextBox3";
-            this.sataTextBox3.Texts = "";
-            this.sataTextBox3.UnderlinedStyle = false;
+            this.MaxBudget.BorderColor = System.Drawing.Color.Transparent;
+            this.MaxBudget.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(68)))), ((int)(((byte)(142)))));
+            this.MaxBudget.BorderRadius = 5;
+            this.MaxBudget.BorderSize = 3;
+            this.MaxBudget.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaxBudget.Icon = null;
+            this.MaxBudget.IconSize = new System.Drawing.Size(20, 20);
+            this.MaxBudget.Location = new System.Drawing.Point(85, 102);
+            this.MaxBudget.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaxBudget.Multiline = true;
+            this.MaxBudget.Name = "MaxBudget";
+            this.MaxBudget.PasswordChar = false;
+            this.MaxBudget.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.MaxBudget.PlaceholderText = "Max";
+            this.MaxBudget.Size = new System.Drawing.Size(58, 37);
+            this.MaxBudget.TabIndex = 26;
+            this.MaxBudget.Text = "sataTextBox3";
+            this.MaxBudget.Texts = "";
+            this.MaxBudget.UnderlinedStyle = false;
             // 
-            // sataTextBox2
+            // MinBudget
             // 
-            this.sataTextBox2.BorderColor = System.Drawing.Color.Transparent;
-            this.sataTextBox2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(68)))), ((int)(((byte)(142)))));
-            this.sataTextBox2.BorderRadius = 5;
-            this.sataTextBox2.BorderSize = 3;
-            this.sataTextBox2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sataTextBox2.Icon = null;
-            this.sataTextBox2.IconSize = new System.Drawing.Size(20, 20);
-            this.sataTextBox2.Location = new System.Drawing.Point(20, 126);
-            this.sataTextBox2.Multiline = true;
-            this.sataTextBox2.Name = "sataTextBox2";
-            this.sataTextBox2.PasswordChar = false;
-            this.sataTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.sataTextBox2.PlaceholderText = "Min";
-            this.sataTextBox2.Size = new System.Drawing.Size(77, 45);
-            this.sataTextBox2.TabIndex = 21;
-            this.sataTextBox2.Text = "sataTextBox2";
-            this.sataTextBox2.Texts = "";
-            this.sataTextBox2.UnderlinedStyle = false;
+            this.MinBudget.BorderColor = System.Drawing.Color.Transparent;
+            this.MinBudget.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(68)))), ((int)(((byte)(142)))));
+            this.MinBudget.BorderRadius = 5;
+            this.MinBudget.BorderSize = 3;
+            this.MinBudget.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinBudget.Icon = null;
+            this.MinBudget.IconSize = new System.Drawing.Size(20, 20);
+            this.MinBudget.Location = new System.Drawing.Point(15, 102);
+            this.MinBudget.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinBudget.Multiline = true;
+            this.MinBudget.Name = "MinBudget";
+            this.MinBudget.PasswordChar = false;
+            this.MinBudget.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.MinBudget.PlaceholderText = "Min";
+            this.MinBudget.Size = new System.Drawing.Size(58, 37);
+            this.MinBudget.TabIndex = 21;
+            this.MinBudget.Text = "sataTextBox2";
+            this.MinBudget.Texts = "";
+            this.MinBudget.UnderlinedStyle = false;
             // 
             // label4
             // 
@@ -128,9 +132,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(29, 257);
+            this.label4.Location = new System.Drawing.Point(22, 209);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 16);
+            this.label4.Size = new System.Drawing.Size(65, 15);
             this.label4.TabIndex = 25;
             this.label4.Text = "Group Size";
             // 
@@ -140,9 +145,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(31, 181);
+            this.label2.Location = new System.Drawing.Point(23, 147);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 16);
+            this.label2.Size = new System.Drawing.Size(53, 15);
             this.label2.TabIndex = 24;
             this.label2.Text = "Duration";
             // 
@@ -152,9 +158,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(29, 107);
+            this.label1.Location = new System.Drawing.Point(22, 87);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.Size = new System.Drawing.Size(45, 15);
             this.label1.TabIndex = 23;
             this.label1.Text = "Budget";
             // 
@@ -164,27 +171,30 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(12, 56);
+            this.label3.Location = new System.Drawing.Point(9, 46);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 16);
+            this.label3.Size = new System.Drawing.Size(113, 15);
             this.label3.TabIndex = 22;
             this.label3.Text = "ADVANCED FILTERS:";
             // 
             // Sidebar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Controls.Add(this.sataTextBox5);
-            this.Controls.Add(this.sataTextBox4);
-            this.Controls.Add(this.sataTextBox3);
-            this.Controls.Add(this.sataTextBox2);
+            this.Controls.Add(this.GroupSize);
+            this.Controls.Add(this.DurationInDays);
+            this.Controls.Add(this.MaxBudget);
+            this.Controls.Add(this.MinBudget);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Sidebar";
-            this.Size = new System.Drawing.Size(207, 458);
+            this.Size = new System.Drawing.Size(155, 372);
+            this.Load += new System.EventHandler(this.Sidebar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,10 +202,10 @@
 
         #endregion
 
-        private SATATextBox sataTextBox5;
-        private SATATextBox sataTextBox4;
-        private SATATextBox sataTextBox3;
-        private SATATextBox sataTextBox2;
+        private SATATextBox GroupSize;
+        private SATATextBox DurationInDays;
+        private SATATextBox MaxBudget;
+        private SATATextBox MinBudget;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

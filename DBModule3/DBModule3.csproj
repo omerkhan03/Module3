@@ -70,6 +70,12 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllTrips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllTrips.Designer.cs">
+      <DependentUpon>AllTrips.cs</DependentUpon>
+    </Compile>
     <Compile Include="CancelBooking.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -198,6 +204,12 @@
     <Compile Include="TravelerSignUp.Designer.cs">
       <DependentUpon>TravelerSignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="TravelPasses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TravelPasses.Designer.cs">
+      <DependentUpon>TravelPasses.cs</DependentUpon>
+    </Compile>
     <Compile Include="TripCreator.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -212,6 +224,9 @@
     </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllTrips.resx">
+      <DependentUpon>AllTrips.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CancelBooking.resx">
       <DependentUpon>CancelBooking.cs</DependentUpon>
@@ -282,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TravelerSignUp.resx">
       <DependentUpon>TravelerSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPasses.resx">
+      <DependentUpon>TravelPasses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TripCreator.resx">
       <DependentUpon>TripCreator.cs</DependentUpon>
